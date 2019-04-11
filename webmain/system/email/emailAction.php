@@ -144,7 +144,7 @@ class emailClassAction extends Action
 		echo '<title>自动接收邮件设置</title>';
 		echo '<br>';
 		
-		echo '<font color="red">自动接收邮件必须使用服务器的计划任务你参考以下设置。</font><br><a target="_blank" style="color:blue" href="'.URLY.'view_email.html">查看官网上帮助</a><br>';
+		echo '<font color="red">自动接收邮件必须使用服务器的计划任务你参考以下设置。</font><br>';
 		
 		echo '一、<b>Windows服务器</b>，可根据以下设置定时任务<br>';
 		$str1 = '@echo off
@@ -154,11 +154,11 @@ cd '.$ljth.'
 		
 		echo '1、打开系统配置文件webmainConfig.php加上一个配置phppath设置php环境的目录地址如：F:\php\php-5.6.22\php.exe，设置好了，刷新本页面。<br>';
 		echo '<div style="background:#caeccb;padding:5px;border:1px #888888 solid;border-radius:5px;">';
-		echo "return array(<br>'title'	=>'信呼OA',<br>'phppath' => 'F:\php\php-5.6.22\php.exe' <font color=#aaaaaa>//加上这个你php.exe的路径</font><br>)";
+		echo "return array(<br>'title'	=>'OA',<br>'phppath' => 'F:\php\php-5.6.22\php.exe' <font color=#aaaaaa>//加上这个你php.exe的路径</font><br>)";
 		echo '</div>';
 		echo '2、在您的win服务器上，开始菜单→运行 输入 cmd 回车(管理员身份运行)，输入以下命令(每30分钟运行一次)：<br>';
 		echo '<div style="background:#caeccb;padding:5px;border:1px #888888 solid;border-radius:5px;">';
-		echo 'schtasks /create /sc DAILY /mo 1 /du "24:00" /ri 30 /sd "2018/03/01" /st "00:00:05"  /tn "信呼自动接收邮件" /ru System /tr '.$ljth.'\\'.UPDIR.'\cli\xinhuemailrun.bat';
+		echo 'schtasks /create /sc DAILY /mo 1 /du "24:00" /ri 30 /sd "2018/03/01" /st "00:00:05"  /tn "自动接收邮件" /ru System /tr '.$ljth.'\\'.UPDIR.'\cli\xinhuemailrun.bat';
 		echo '</div>';
 		
 		
@@ -169,7 +169,7 @@ cd '.$ljth.'
 		echo '根据以下命令设置运行：<br>';
 		echo '<div style="background:#caeccb;padding:5px;border:1px #888888 solid;border-radius:5px;"><font color=blue>chmod</font> 777 '.ROOT_PATH.'/'.$spath.'<br>';
 		echo '<font color=blue>crontab</font> -e<br>';
-		echo '#信呼自动接收邮件每30分钟运行一次<br>';
+		echo '#自动接收邮件每30分钟运行一次<br>';
 		echo '*/30 * * * * '.ROOT_PATH.'/'.$spath.'</div>';
 	}
 }

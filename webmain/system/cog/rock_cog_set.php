@@ -84,9 +84,8 @@ $(document).ready(function(){
 			<td  align="right">REIM即时通信标题：</td>
 			<td class="tdinput"><input id="reimtitle_{rand}" class="form-control"></td>
 			
-			<td  align="right"><a target="_blank" href="<?=URLY?>">信呼官网</a>key：</td>
-			<td class="tdinput"><input id="xinhukey_{rand}" class="form-control">
-			<font color="#888888">用于在线升级使用,看<a target="_blank" href="<?=URLY?>view_xhkey.html">[帮助]</a>获取</font></td>
+			<td  align="right">密钥KEY：</td>
+			<td class="tdinput"><input id="xinhukey_{rand}" class="form-control"></td>
 		</tr>
 		
 		<tr>
@@ -160,11 +159,8 @@ $(document).ready(function(){
 		
 			
 		<tr>
-			<td  align="right">文档在线预览编辑：</td>
-			<td class="tdinput"><select id="officeyl_{rand}"  class="form-control"><option value="0">自己服务器安装转PDF服务</option>
-			<option value="1">使用官网插件(官网VIP专用)，不需要安装任何插件。</option>
-			<!--<option value="2">自己部署信呼文件管理平台</option>-->
-			</select></td>
+			<td  align="right">文档转PDF预览：</td>
+			<td class="tdinput"><select id="officeyl_{rand}"  class="form-control"><option value="0">自己服务器安装转化插件</option><!--<option value="1">使用官网插件(官网VIP专用)，不需要安装任何插件。</option>--></select></td>
 			
 			<td  align="right">记录用户操作：</td>
 			<td class="tdinput"><select id="useropt_{rand}"  class="form-control"><option value="">不记录</option><option value="1">记录到日志里</option></select></td>

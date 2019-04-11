@@ -623,7 +623,7 @@ var c={
 			initbodys(form('id').value);
 			if(isedit==0){
 				this.formdisabled();
-				js.setmsg('无权编辑，查看<a href="http://www.rockoa.com/view_wqbj.html" target="_blank" class="blue">[帮助]</a>');
+				js.setmsg('无权编辑');
 			}else{
 				$('#AltSspan').show();
 				c.initdatelx();

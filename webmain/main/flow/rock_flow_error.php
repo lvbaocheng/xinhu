@@ -98,7 +98,7 @@ $(document).ready(function(){
 	<button class="btn btn-default" click="pipei" type="button">重新匹配流程</button>&nbsp; 	
 	</td>
 	<td align="left"  width="100%" style="padding:0px 10px;">
-		<div class="tishi">如有异常的记录请点击[重新匹配流程]，如出现无法解决，查看<a target="_blank" href="<?=URLY?>view_danerror.html">帮助</a>。<div>
+		<div class="tishi">如有异常的记录请点击[重新匹配流程]<div>
 	</td>
 	<td align="right" nowrap>
 		

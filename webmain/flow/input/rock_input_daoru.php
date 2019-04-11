@@ -125,5 +125,5 @@ $(document).ready(function(){
 
 <div id="showview_{rand}"></div>
 <div style="padding:10px 0px"><a click="yulan" href="javascript:;">[预览]</a>&nbsp; &nbsp; <button class="btn btn-success" click="saveadd" type="button">确定导入</button>&nbsp; <span id="msgview_{rand}"></span></div>
-<div class="tishi">请严格按照规定格式添加，否则数据将错乱哦，导入的字段可到[流程模块→表单元素管理]下设置，更多可查看<a href="<?=URLY?>view_daoru.html" target="_blank">[帮助]</a>。</div>
+<div class="tishi">请严格按照规定格式添加，否则数据将错乱哦，导入的字段可到[流程模块→表单元素管理]下设置</div>
 </div>

@@ -101,11 +101,11 @@ $(document).ready(function(){
 		changetype:function(o1){
 			var val = o1.value;
 			if(val!=''){
-				if(utype=='0'){
+				/*if(utype=='0'){
 					js.alert('不是官网vip用户无法切换短信平台');
 					o1.value='';
 					return;
-				}
+				}*/
 				$('#stotal{rand}').html('请到对应短信平台下查看');
 			}else{
 				$('#stotal{rand}').html('请到刷新查看');
@@ -156,7 +156,6 @@ $(document).ready(function(){
 		<td  align="right" ></td>
 		<td class="tdinput">
 		<input type="button" click="init" id="btnss{rand}" value="刷新" class="btn btn-default">&nbsp; &nbsp;
-		<a href="<?=URLY?>view_dxto.html" target="_blank">[使用帮助]</a>
 		</td>
 	</tr>
 	

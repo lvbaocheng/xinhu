@@ -268,7 +268,7 @@ $(document).ready(function(){
 		get('btndinghue_{rand}').disabled=true;
 	}
 
-	$('#viewsubscribe_{rand}').after('<div class="tishi">未设置订阅提醒时间是不会生效哦，可在[操作]菜单上添加提醒设置，查看<a href="<?=URLY?>view_subscribe.html" target="_blank">[帮助]</a>。</div>');
+	$('#viewsubscribe_{rand}').after('<div class="tishi">未设置订阅提醒时间是不会生效哦，可在[操作]菜单上添加提醒设置</div>');
 	
 	c.clickwin=function(){
 		js.confirm('订阅管理新增不是在这里的，请到各个列表页面下的[导出]按钮下点订阅，是否打开相关帮助说明？',function(jg){

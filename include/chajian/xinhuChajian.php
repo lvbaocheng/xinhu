@@ -43,7 +43,7 @@ class xinhuChajian extends Chajian{
 	public function helpstr($num, $na='')
 	{
 		if($na=='')$na='帮助';
-		return '<a style="color:blue" href="'.$this->updatekey.'view_'.$num.'.html" target="_blank">['.$na.']</a>';
+		return '';
 	}
 	
 }

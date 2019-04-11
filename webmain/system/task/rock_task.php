@@ -182,7 +182,7 @@ $(document).ready(function(){
 	
 	
 	
-	<td width="80%">&nbsp;&nbsp;<a href="javascipt:;" click="openanz">[查看计划任务安装]</a>&nbsp;&nbsp;<a href="javascipt:;" click="openqueue">[计划任务队列]</a>&nbsp;&nbsp;<a href="<?=URLY?>view_taskrun.html"target="_blank">[帮助]</a></td>
+	<td width="80%">&nbsp;&nbsp;<a href="javascipt:;" click="openanz">[查看计划任务安装]</a>&nbsp;&nbsp;<a href="javascipt:;" click="openqueue">[计划任务队列]</a></td>
 	<td align="right" nowrap>
 		
 		<button class="btn btn-default" id="yun_{rand}" click="yunx" disabled type="button">运行</button> &nbsp; 
